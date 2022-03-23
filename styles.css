@@ -63,7 +63,7 @@ span {
 
 /* Main */
 main {
-	height: 100vh;
+	height: calc(100vh - 6vh);
   width: 100vw;
 	display: grid;
 	place-items: center;
@@ -103,10 +103,13 @@ h1 {
 	font-family: "comfortaa";
 	font-size: 1.3rem;
 	letter-spacing: var(--letter-spacing);
-	padding: 0.5rem 1rem;
-	margin: 0 1rem;
+	padding: 8px 16px;
 	border-radius: 10px;
 	cursor: pointer;
+}
+
+.reset {
+  margin: 0 1rem;
 }
 
 .btn:hover {
@@ -120,6 +123,7 @@ h1 {
 .footer {
 	display: grid;
 	place-items: center;
+  height: 6vh;
 }
 .footer p {
 	color: var(--para-clr);
@@ -133,14 +137,7 @@ h1 {
 }
 
 @media screen and (max-width: 720px) {
-  main{
-    height: 96vh;
-  }
-  .btn {
-    margin: 0 0.5rem;
-  }
-  .footer {
-    margin-bottom: 0;
-    padding-bottom: 0;
+  .reset{
+    margin: 0 0.45rem;
   }
 }
