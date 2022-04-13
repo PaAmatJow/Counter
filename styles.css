@@ -63,15 +63,15 @@ span {
 
 /* Main */
 main {
-	height: calc(100vh - 6vh);
-  width: 100vw;
+	height: calc(100vh - 3rem);
+	width: 100vw;
 	display: grid;
 	place-items: center;
 }
 
 .container {
 	text-align: center;
-  /* max-width: 40%;
+	/* max-width: 40%;
   margin: auto; */
 }
 h1 {
@@ -93,7 +93,6 @@ h1 {
 	display: flex;
 	justify-content: space-around;
 	align-items: center;
-	
 }
 
 .btn {
@@ -109,21 +108,23 @@ h1 {
 }
 
 .reset {
-  margin: 0 1rem;
+	margin: 0 1rem;
 }
 
 .btn:hover {
-  border: 2px solid #ff8906;
+	border: 2px solid #ff8906;
 	background-color: var(--bck-clr);
 	color: white;
-  transition: var(--transition);
+	transition: var(--transition);
 }
 
 /* Footer */
 .footer {
-	display: grid;
-	place-items: center;
-  height: 6vh;
+	background-color: transparent;
+	height: 3rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 .footer p {
 	color: var(--para-clr);
@@ -136,8 +137,22 @@ h1 {
 	color: white;
 }
 
-@media screen and (max-width: 720px) {
-  .reset{
-    margin: 0 0.45rem;
-  }
+@media screen and (max-width: 550px) {
+	h1 {
+		font-size: 2rem;
+		margin-bottom: 2.5rem;
+		letter-spacing: var(--letter-spacing);
+	}
+	.span{
+		margin-bottom: 2.5rem;
+		font-size: 4rem;
+		font-weight: 400;
+	}
+	.btn{
+		font-size: 1rem;
+		padding: 6px 12px;
+	}
+	.reset{
+		margin: 0 0.7rem;
+	}
 }
